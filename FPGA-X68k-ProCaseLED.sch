@@ -999,12 +999,12 @@ Wire Wire Line
 	3250 3650 2350 3650
 Connection ~ 2950 3850
 Wire Wire Line
-	1250 3850 2950 3850
+	1250 3850 2750 3850
 Connection ~ 2650 3750
 Wire Wire Line
 	2650 3750 3350 3750
 Wire Wire Line
-	1250 3750 2650 3750
+	1250 3750 2450 3750
 $Comp
 L power:+3.3V #PWR06
 U 1 1 5F438B72
@@ -1022,7 +1022,7 @@ Wire Wire Line
 	2350 3650 2350 3500
 Connection ~ 2350 3650
 Wire Wire Line
-	2350 3650 1250 3650
+	2350 3650 2150 3650
 Text Label 1600 3650 0    50   ~ 0
 RESET
 Wire Wire Line
@@ -1318,13 +1318,61 @@ Wire Wire Line
 	4700 1700 4700 1800
 Wire Wire Line
 	4400 1700 4200 1700
+Connection ~ 4200 1700
+Wire Wire Line
+	4200 1700 4200 2050
+$Comp
+L Connector:TestPoint TP25
+U 1 1 5F30828E
+P 2150 3600
+F 0 "TP25" H 2208 3718 50  0000 L CNN
+F 1 "RESET" H 2208 3627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 2350 3600 50  0001 C CNN
+F 3 "~" H 2350 3600 50  0001 C CNN
+	1    2150 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP26
+U 1 1 5F308F76
+P 2450 3600
+F 0 "TP26" H 2508 3718 50  0000 L CNN
+F 1 "SCL" H 2508 3627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 2650 3600 50  0001 C CNN
+F 3 "~" H 2650 3600 50  0001 C CNN
+	1    2450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP27
+U 1 1 5F3091EF
+P 2750 3600
+F 0 "TP27" H 2808 3718 50  0000 L CNN
+F 1 "SDA" H 2808 3627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 2950 3600 50  0001 C CNN
+F 3 "~" H 2950 3600 50  0001 C CNN
+	1    2750 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3600 2150 3650
+Connection ~ 2150 3650
+Wire Wire Line
+	2150 3650 1250 3650
+Wire Wire Line
+	2450 3600 2450 3750
+Connection ~ 2450 3750
+Wire Wire Line
+	2450 3750 2650 3750
+Wire Wire Line
+	2750 3600 2750 3850
 Wire Bus Line
 	8150 700  8150 6400
 Wire Bus Line
 	5600 1050 5600 6400
 Wire Bus Line
 	5350 2300 5350 6400
-Connection ~ 4200 1700
+Connection ~ 2750 3850
 Wire Wire Line
-	4200 1700 4200 2050
+	2750 3850 2950 3850
 $EndSCHEMATC
