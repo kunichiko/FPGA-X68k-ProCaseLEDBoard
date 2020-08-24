@@ -1685,11 +1685,6 @@ Wire Wire Line
 	6950 8050 7150 8050
 Wire Wire Line
 	7150 8050 7150 8900
-Wire Bus Line
-	3600 10900 3950 10900
-Wire Bus Line
-	3950 10900 5650 10900
-Connection ~ 3950 10900
 $Comp
 L Device:R_US R29
 U 1 1 5F6589AA
@@ -1783,10 +1778,6 @@ Wire Wire Line
 	8000 8150 8000 8200
 Wire Wire Line
 	7900 7300 8000 7300
-Wire Wire Line
-	7900 7300 7900 8150
-Wire Wire Line
-	7900 8150 8000 8150
 Connection ~ 7900 7300
 Connection ~ 8000 8150
 $Comp
@@ -1880,17 +1871,7 @@ Wire Wire Line
 	8700 9850 8700 9900
 Wire Wire Line
 	8000 9850 8000 9900
-Wire Wire Line
-	7900 9000 8000 9000
-Wire Wire Line
-	7900 9000 7900 9850
-Wire Wire Line
-	7900 9850 8000 9850
 Connection ~ 8000 9850
-Wire Wire Line
-	7900 8150 7900 9000
-Connection ~ 7900 8150
-Connection ~ 7900 9000
 Wire Wire Line
 	8700 10600 8900 10600
 Wire Wire Line
@@ -2124,7 +2105,7 @@ Wire Wire Line
 	10400 8050 10600 8050
 Wire Wire Line
 	10600 8050 10600 8900
-Connection ~ 5650 10900
+Connection ~ 5850 10900
 Wire Wire Line
 	5450 10600 6300 10600
 Connection ~ 5450 10600
@@ -2161,75 +2142,42 @@ Wire Wire Line
 	10600 10700 10600 10600
 Connection ~ 10600 10600
 Entry Wire Line
-	9100 7800 9200 7700
+	7550 7800 7450 7700
 Wire Wire Line
-	9200 7700 9700 7700
-Connection ~ 9700 7700
+	7450 7700 6950 7700
 Entry Wire Line
-	9100 8650 9200 8550
+	7550 8650 7450 8550
 Wire Wire Line
-	9200 8550 9700 8550
+	7450 8550 6950 8550
 Entry Wire Line
-	9100 9500 9200 9400
+	7550 9500 7450 9400
 Wire Wire Line
-	9200 9400 9700 9400
+	7450 9400 6950 9400
 Entry Wire Line
-	9100 10350 9200 10250
+	7550 10350 7450 10250
 Wire Wire Line
-	9200 10250 9700 10250
+	7450 10250 6950 10250
 Entry Wire Line
-	7400 7800 7500 7700
+	5850 7800 5750 7700
 Wire Wire Line
-	7500 7700 8000 7700
+	5750 7700 5250 7700
 Entry Wire Line
-	7400 8650 7500 8550
+	5850 8650 5750 8550
 Wire Wire Line
-	7500 8550 8000 8550
+	5750 8550 5250 8550
 Entry Wire Line
-	7400 9500 7500 9400
+	5850 9500 5750 9400
 Wire Wire Line
-	7500 9400 8000 9400
+	5750 9400 5250 9400
 Entry Wire Line
-	7400 10350 7500 10250
+	5850 10350 5750 10250
 Wire Wire Line
-	7500 10250 8000 10250
-Entry Wire Line
-	5650 7800 5750 7700
-Wire Wire Line
-	5750 7700 6250 7700
-Entry Wire Line
-	5650 8650 5750 8550
-Wire Wire Line
-	5750 8550 6250 8550
-Entry Wire Line
-	5650 9500 5750 9400
-Wire Wire Line
-	5750 9400 6250 9400
-Entry Wire Line
-	5650 10350 5750 10250
-Wire Wire Line
-	5750 10250 6250 10250
-Entry Wire Line
-	3950 7800 4050 7700
-Wire Wire Line
-	4050 7700 4550 7700
-Entry Wire Line
-	3950 8650 4050 8550
-Wire Wire Line
-	4050 8550 4550 8550
-Entry Wire Line
-	3950 9500 4050 9400
-Wire Wire Line
-	4050 9400 4550 9400
-Entry Wire Line
-	3950 10350 4050 10250
-Wire Wire Line
-	4050 10250 4550 10250
+	5750 10250 5250 10250
 Wire Bus Line
-	5650 10900 7400 10900
-Connection ~ 7400 10900
+	5850 10900 7550 10900
+Connection ~ 7550 10900
 Wire Bus Line
-	7400 10900 9100 10900
+	7550 10900 9300 10900
 Entry Wire Line
 	3600 8050 3500 7950
 Entry Wire Line
@@ -2262,21 +2210,6 @@ Entry Wire Line
 	3600 9550 3500 9450
 Entry Wire Line
 	3600 9650 3500 9550
-Connection ~ 4550 7700
-Connection ~ 4550 8550
-Connection ~ 4550 9400
-Connection ~ 4550 10250
-Connection ~ 6250 7700
-Connection ~ 6250 8550
-Connection ~ 6250 9400
-Connection ~ 6250 10250
-Connection ~ 8000 7700
-Connection ~ 8000 8550
-Connection ~ 8000 9400
-Connection ~ 8000 10250
-Connection ~ 9700 8550
-Connection ~ 9700 9400
-Connection ~ 9700 10250
 Wire Wire Line
 	3050 7950 3500 7950
 Wire Wire Line
@@ -2519,38 +2452,22 @@ Text Label 3100 9450 0    50   ~ 0
 FD0ID6
 Text Label 3100 9550 0    50   ~ 0
 FD0ID7
-Text Label 4100 7700 0    50   ~ 0
+Text Label 5700 7700 2    50   ~ 0
 FD0ID0
-Text Label 4100 8550 0    50   ~ 0
+Text Label 5700 8550 2    50   ~ 0
 FD0ID1
-Text Label 4100 9400 0    50   ~ 0
+Text Label 5700 9400 2    50   ~ 0
 FD0ID2
-Text Label 4100 10250 0    50   ~ 0
+Text Label 5700 10250 2    50   ~ 0
 FD0ID3
-Text Label 5800 7700 0    50   ~ 0
+Text Label 7400 7700 2    50   ~ 0
 FD0ID4
-Text Label 5800 8550 0    50   ~ 0
+Text Label 7400 8550 2    50   ~ 0
 FD0ID5
-Text Label 5800 9400 0    50   ~ 0
+Text Label 7400 9400 2    50   ~ 0
 FD0ID6
-Text Label 5800 10250 0    50   ~ 0
+Text Label 7400 10250 2    50   ~ 0
 FD0ID7
-Text Label 7550 7700 0    50   ~ 0
-FD1ID0
-Text Label 7550 8550 0    50   ~ 0
-FD1ID1
-Text Label 7550 9400 0    50   ~ 0
-FD1ID2
-Text Label 7550 10250 0    50   ~ 0
-FD1ID3
-Text Label 9250 7700 0    50   ~ 0
-FD1ID4
-Text Label 9250 8550 0    50   ~ 0
-FD1ID5
-Text Label 9250 9400 0    50   ~ 0
-FD1ID6
-Text Label 9250 10250 0    50   ~ 0
-FD1ID7
 $Comp
 L power:GND #PWR014
 U 1 1 60253724
@@ -2985,10 +2902,10 @@ Connection ~ 1900 5300
 Wire Wire Line
 	1250 5300 1900 5300
 $Comp
-L Device:C_Small C?
+L Device:C_Small C2
 U 1 1 621B4419
 P 2950 7500
-F 0 "C?" V 2721 7500 50  0000 C CNN
+F 0 "C2" V 2721 7500 50  0000 C CNN
 F 1 "C_Small" V 2812 7500 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2950 7500 50  0001 C CNN
 F 3 "~" H 2950 7500 50  0001 C CNN
@@ -2996,10 +2913,10 @@ F 3 "~" H 2950 7500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR08
 U 1 1 621B441F
 P 3150 7600
-F 0 "#PWR?" H 3150 7350 50  0001 C CNN
+F 0 "#PWR08" H 3150 7350 50  0001 C CNN
 F 1 "GND" H 3155 7427 50  0000 C CNN
 F 2 "" H 3150 7600 50  0001 C CNN
 F 3 "" H 3150 7600 50  0001 C CNN
@@ -3014,18 +2931,100 @@ Wire Wire Line
 	2350 7300 2350 7500
 Wire Wire Line
 	2350 7500 2850 7500
+Connection ~ 2350 7500
+Wire Wire Line
+	2350 7500 2350 7650
+Wire Bus Line
+	9300 10900 11000 10900
+Connection ~ 9300 10900
+Entry Wire Line
+	11000 7800 10900 7700
+Wire Wire Line
+	10900 7700 10400 7700
+Entry Wire Line
+	11000 8650 10900 8550
+Wire Wire Line
+	10900 8550 10400 8550
+Entry Wire Line
+	11000 9500 10900 9400
+Wire Wire Line
+	10900 9400 10400 9400
+Entry Wire Line
+	11000 10350 10900 10250
+Wire Wire Line
+	10900 10250 10400 10250
+Text Label 10850 7700 2    50   ~ 0
+FD1ID4
+Text Label 10850 8550 2    50   ~ 0
+FD1ID5
+Text Label 10850 9400 2    50   ~ 0
+FD1ID6
+Text Label 10850 10250 2    50   ~ 0
+FD1ID7
+Text Label 9150 10250 2    50   ~ 0
+FD1ID3
+Text Label 9150 9400 2    50   ~ 0
+FD1ID2
+Text Label 9150 8550 2    50   ~ 0
+FD1ID1
+Text Label 9150 7700 2    50   ~ 0
+FD1ID0
+Wire Wire Line
+	9200 10250 8700 10250
+Entry Wire Line
+	9300 10350 9200 10250
+Wire Wire Line
+	9200 9400 8700 9400
+Entry Wire Line
+	9300 9500 9200 9400
+Wire Wire Line
+	9200 8550 8700 8550
+Entry Wire Line
+	9300 8650 9200 8550
+Wire Wire Line
+	9200 7700 8700 7700
+Entry Wire Line
+	9300 7800 9200 7700
+Connection ~ 7900 9000
+Connection ~ 7900 8150
+Wire Wire Line
+	7900 8150 7900 9000
+Wire Wire Line
+	7900 9850 8000 9850
+Wire Wire Line
+	7900 9000 7900 9850
+Wire Wire Line
+	7900 9000 8000 9000
+Wire Wire Line
+	7900 8150 8000 8150
+Wire Wire Line
+	7900 7300 7900 8150
+Connection ~ 8700 7700
+Connection ~ 8700 8550
+Connection ~ 8700 9400
+Connection ~ 8700 10250
+Connection ~ 6950 7700
+Connection ~ 6950 8550
+Connection ~ 6950 9400
+Connection ~ 6950 10250
+Connection ~ 5250 7700
+Connection ~ 5250 8550
+Connection ~ 5250 9400
+Connection ~ 5250 10250
+Wire Bus Line
+	3600 10900 5850 10900
 Wire Bus Line
 	1150 6500 1150 8750
 Wire Bus Line
-	3950 7750 3950 10900
+	5850 7750 5850 10900
 Wire Bus Line
-	5650 7750 5650 10900
-Wire Bus Line
-	7400 7750 7400 10900
-Wire Bus Line
-	9100 7750 9100 10900
+	7550 7750 7550 10900
 Wire Bus Line
 	1150 6500 3150 6500
+Wire Bus Line
+	11000 7750 11000 10900
+Wire Bus Line
+	9300 7750 9300 10900
 Wire Bus Line
 	3600 7900 3600 10900
 Wire Bus Line
@@ -3034,7 +3033,4 @@ Wire Bus Line
 	5600 1050 5600 6400
 Wire Bus Line
 	5350 2300 5350 6400
-Connection ~ 2350 7500
-Wire Wire Line
-	2350 7500 2350 7650
 $EndSCHEMATC

@@ -1685,11 +1685,6 @@ Wire Wire Line
 	6950 8050 7150 8050
 Wire Wire Line
 	7150 8050 7150 8900
-Wire Bus Line
-	3600 10900 3950 10900
-Wire Bus Line
-	3950 10900 5650 10900
-Connection ~ 3950 10900
 $Comp
 L Device:R_US R29
 U 1 1 5F6589AA
@@ -1783,10 +1778,6 @@ Wire Wire Line
 	8000 8150 8000 8200
 Wire Wire Line
 	7900 7300 8000 7300
-Wire Wire Line
-	7900 7300 7900 8150
-Wire Wire Line
-	7900 8150 8000 8150
 Connection ~ 7900 7300
 Connection ~ 8000 8150
 $Comp
@@ -1880,17 +1871,7 @@ Wire Wire Line
 	8700 9850 8700 9900
 Wire Wire Line
 	8000 9850 8000 9900
-Wire Wire Line
-	7900 9000 8000 9000
-Wire Wire Line
-	7900 9000 7900 9850
-Wire Wire Line
-	7900 9850 8000 9850
 Connection ~ 8000 9850
-Wire Wire Line
-	7900 8150 7900 9000
-Connection ~ 7900 8150
-Connection ~ 7900 9000
 Wire Wire Line
 	8700 10600 8900 10600
 Wire Wire Line
@@ -2124,7 +2105,6 @@ Wire Wire Line
 	10400 8050 10600 8050
 Wire Wire Line
 	10600 8050 10600 8900
-Connection ~ 5650 10900
 Wire Wire Line
 	5450 10600 6300 10600
 Connection ~ 5450 10600
@@ -2161,76 +2141,6 @@ Wire Wire Line
 	10600 10700 10600 10600
 Connection ~ 10600 10600
 Entry Wire Line
-	9100 7800 9200 7700
-Wire Wire Line
-	9200 7700 9700 7700
-Connection ~ 9700 7700
-Entry Wire Line
-	9100 8650 9200 8550
-Wire Wire Line
-	9200 8550 9700 8550
-Entry Wire Line
-	9100 9500 9200 9400
-Wire Wire Line
-	9200 9400 9700 9400
-Entry Wire Line
-	9100 10350 9200 10250
-Wire Wire Line
-	9200 10250 9700 10250
-Entry Wire Line
-	7400 7800 7500 7700
-Wire Wire Line
-	7500 7700 8000 7700
-Entry Wire Line
-	7400 8650 7500 8550
-Wire Wire Line
-	7500 8550 8000 8550
-Entry Wire Line
-	7400 9500 7500 9400
-Wire Wire Line
-	7500 9400 8000 9400
-Entry Wire Line
-	7400 10350 7500 10250
-Wire Wire Line
-	7500 10250 8000 10250
-Entry Wire Line
-	5650 7800 5750 7700
-Wire Wire Line
-	5750 7700 6250 7700
-Entry Wire Line
-	5650 8650 5750 8550
-Wire Wire Line
-	5750 8550 6250 8550
-Entry Wire Line
-	5650 9500 5750 9400
-Wire Wire Line
-	5750 9400 6250 9400
-Entry Wire Line
-	5650 10350 5750 10250
-Wire Wire Line
-	5750 10250 6250 10250
-Entry Wire Line
-	3950 7800 4050 7700
-Wire Wire Line
-	4050 7700 4550 7700
-Entry Wire Line
-	3950 8650 4050 8550
-Wire Wire Line
-	4050 8550 4550 8550
-Entry Wire Line
-	3950 9500 4050 9400
-Wire Wire Line
-	4050 9400 4550 9400
-Entry Wire Line
-	3950 10350 4050 10250
-Wire Wire Line
-	4050 10250 4550 10250
-Wire Bus Line
-	5650 10900 7400 10900
-Connection ~ 7400 10900
-Wire Bus Line
-	7400 10900 9100 10900
-Entry Wire Line
 	3600 8050 3500 7950
 Entry Wire Line
 	3600 8150 3500 8050
@@ -2262,21 +2172,6 @@ Entry Wire Line
 	3600 9550 3500 9450
 Entry Wire Line
 	3600 9650 3500 9550
-Connection ~ 4550 7700
-Connection ~ 4550 8550
-Connection ~ 4550 9400
-Connection ~ 4550 10250
-Connection ~ 6250 7700
-Connection ~ 6250 8550
-Connection ~ 6250 9400
-Connection ~ 6250 10250
-Connection ~ 8000 7700
-Connection ~ 8000 8550
-Connection ~ 8000 9400
-Connection ~ 8000 10250
-Connection ~ 9700 8550
-Connection ~ 9700 9400
-Connection ~ 9700 10250
 Wire Wire Line
 	3050 7950 3500 7950
 Wire Wire Line
@@ -2294,17 +2189,6 @@ Wire Wire Line
 Wire Wire Line
 	3050 8650 3500 8650
 $Comp
-L local:TPR-105 U3
-U 1 1 5FD406A0
-P 4900 7550
-F 0 "U3" H 4900 7625 50  0000 C CNN
-F 1 "TPR-105" H 4900 7534 50  0000 C CNN
-F 2 "local:TPR-105" H 4900 7550 50  0001 C CNN
-F 3 "" H 4900 7550 50  0001 C CNN
-	1    4900 7550
-	1    0    0    -1  
-$EndComp
-$Comp
 L local:TPR-105 U4
 U 1 1 5FE05C03
 P 4900 8400
@@ -2313,7 +2197,7 @@ F 1 "TPR-105" H 4900 8384 50  0000 C CNN
 F 2 "local:TPR-105" H 4900 8400 50  0001 C CNN
 F 3 "" H 4900 8400 50  0001 C CNN
 	1    4900 8400
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4600 9600 4600 9750
@@ -2326,7 +2210,7 @@ F 1 "TPR-105" H 4900 9234 50  0000 C CNN
 F 2 "local:TPR-105" H 4900 9250 50  0001 C CNN
 F 3 "" H 4900 9250 50  0001 C CNN
 	1    4900 9250
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L local:TPR-105 U6
@@ -2337,7 +2221,7 @@ F 1 "TPR-105" H 4900 10084 50  0000 C CNN
 F 2 "local:TPR-105" H 4900 10100 50  0001 C CNN
 F 3 "" H 4900 10100 50  0001 C CNN
 	1    4900 10100
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L local:TPR-105 U15
@@ -2348,7 +2232,7 @@ F 1 "TPR-105" H 10050 7534 50  0000 C CNN
 F 2 "local:TPR-105" H 10050 7550 50  0001 C CNN
 F 3 "" H 10050 7550 50  0001 C CNN
 	1    10050 7550
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L local:TPR-105 U16
@@ -2359,7 +2243,7 @@ F 1 "TPR-105" H 10050 8384 50  0000 C CNN
 F 2 "local:TPR-105" H 10050 8400 50  0001 C CNN
 F 3 "" H 10050 8400 50  0001 C CNN
 	1    10050 8400
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L local:TPR-105 U17
@@ -2370,7 +2254,7 @@ F 1 "TPR-105" H 10050 9234 50  0000 C CNN
 F 2 "local:TPR-105" H 10050 9250 50  0001 C CNN
 F 3 "" H 10050 9250 50  0001 C CNN
 	1    10050 9250
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L local:TPR-105 U18
@@ -2381,7 +2265,7 @@ F 1 "TPR-105" H 10050 10084 50  0000 C CNN
 F 2 "local:TPR-105" H 10050 10100 50  0001 C CNN
 F 3 "" H 10050 10100 50  0001 C CNN
 	1    10050 10100
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L local:TPR-105 U7
@@ -2392,7 +2276,7 @@ F 1 "TPR-105" H 6600 7534 50  0000 C CNN
 F 2 "local:TPR-105" H 6600 7550 50  0001 C CNN
 F 3 "" H 6600 7550 50  0001 C CNN
 	1    6600 7550
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L local:TPR-105 U8
@@ -2403,7 +2287,7 @@ F 1 "TPR-105" H 6600 8384 50  0000 C CNN
 F 2 "local:TPR-105" H 6600 8400 50  0001 C CNN
 F 3 "" H 6600 8400 50  0001 C CNN
 	1    6600 8400
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L local:TPR-105 U9
@@ -2414,7 +2298,7 @@ F 1 "TPR-105" H 6600 9234 50  0000 C CNN
 F 2 "local:TPR-105" H 6600 9250 50  0001 C CNN
 F 3 "" H 6600 9250 50  0001 C CNN
 	1    6600 9250
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L local:TPR-105 U10
@@ -2425,7 +2309,7 @@ F 1 "TPR-105" H 6600 10084 50  0000 C CNN
 F 2 "local:TPR-105" H 6600 10100 50  0001 C CNN
 F 3 "" H 6600 10100 50  0001 C CNN
 	1    6600 10100
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L local:TPR-105 U11
@@ -2436,7 +2320,7 @@ F 1 "TPR-105" H 8350 7534 50  0000 C CNN
 F 2 "local:TPR-105" H 8350 7550 50  0001 C CNN
 F 3 "" H 8350 7550 50  0001 C CNN
 	1    8350 7550
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L local:TPR-105 U12
@@ -2447,7 +2331,7 @@ F 1 "TPR-105" H 8350 8384 50  0000 C CNN
 F 2 "local:TPR-105" H 8350 8400 50  0001 C CNN
 F 3 "" H 8350 8400 50  0001 C CNN
 	1    8350 8400
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L local:TPR-105 U13
@@ -2458,7 +2342,7 @@ F 1 "TPR-105" H 8350 9234 50  0000 C CNN
 F 2 "local:TPR-105" H 8350 9250 50  0001 C CNN
 F 3 "" H 8350 9250 50  0001 C CNN
 	1    8350 9250
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L local:TPR-105 U14
@@ -2469,7 +2353,7 @@ F 1 "TPR-105" H 8350 10084 50  0000 C CNN
 F 2 "local:TPR-105" H 8350 10100 50  0001 C CNN
 F 3 "" H 8350 10100 50  0001 C CNN
 	1    8350 10100
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Text Label 3100 7950 0    50   ~ 0
 FD1ID0
@@ -2519,38 +2403,6 @@ Text Label 3100 9450 0    50   ~ 0
 FD0ID6
 Text Label 3100 9550 0    50   ~ 0
 FD0ID7
-Text Label 4100 7700 0    50   ~ 0
-FD0ID0
-Text Label 4100 8550 0    50   ~ 0
-FD0ID1
-Text Label 4100 9400 0    50   ~ 0
-FD0ID2
-Text Label 4100 10250 0    50   ~ 0
-FD0ID3
-Text Label 5800 7700 0    50   ~ 0
-FD0ID4
-Text Label 5800 8550 0    50   ~ 0
-FD0ID5
-Text Label 5800 9400 0    50   ~ 0
-FD0ID6
-Text Label 5800 10250 0    50   ~ 0
-FD0ID7
-Text Label 7550 7700 0    50   ~ 0
-FD1ID0
-Text Label 7550 8550 0    50   ~ 0
-FD1ID1
-Text Label 7550 9400 0    50   ~ 0
-FD1ID2
-Text Label 7550 10250 0    50   ~ 0
-FD1ID3
-Text Label 9250 7700 0    50   ~ 0
-FD1ID4
-Text Label 9250 8550 0    50   ~ 0
-FD1ID5
-Text Label 9250 9400 0    50   ~ 0
-FD1ID6
-Text Label 9250 10250 0    50   ~ 0
-FD1ID7
 $Comp
 L power:GND #PWR014
 U 1 1 60253724
@@ -3014,18 +2866,169 @@ Wire Wire Line
 	2350 7300 2350 7500
 Wire Wire Line
 	2350 7500 2850 7500
+Connection ~ 2350 7500
+Wire Wire Line
+	2350 7500 2350 7650
+Connection ~ 7900 9000
+Connection ~ 7900 8150
+Wire Wire Line
+	7900 8150 7900 9000
+Wire Wire Line
+	7900 9850 8000 9850
+Wire Wire Line
+	7900 9000 7900 9850
+Wire Wire Line
+	7900 9000 8000 9000
+Wire Wire Line
+	7900 8150 8000 8150
+Wire Wire Line
+	7900 7300 7900 8150
+$Comp
+L local:TPR-105 U3
+U 1 1 5FD406A0
+P 4900 7550
+F 0 "U3" H 4900 7625 50  0000 C CNN
+F 1 "TPR-105" H 4900 7534 50  0000 C CNN
+F 2 "local:TPR-105" H 4900 7550 50  0001 C CNN
+F 3 "" H 4900 7550 50  0001 C CNN
+	1    4900 7550
+	-1   0    0    -1  
+$EndComp
+Wire Bus Line
+	3600 10900 3950 10900
+Connection ~ 3950 10900
+Connection ~ 4550 10250
+Connection ~ 4550 9400
+Connection ~ 4550 8550
+Connection ~ 4550 7700
+Text Label 4100 10250 0    50   ~ 0
+FD0ID3
+Text Label 4100 9400 0    50   ~ 0
+FD0ID2
+Text Label 4100 8550 0    50   ~ 0
+FD0ID1
+Text Label 4100 7700 0    50   ~ 0
+FD0ID0
+Wire Wire Line
+	4050 10250 4550 10250
+Entry Wire Line
+	3950 10350 4050 10250
+Wire Wire Line
+	4050 9400 4550 9400
+Entry Wire Line
+	3950 9500 4050 9400
+Wire Wire Line
+	4050 8550 4550 8550
+Entry Wire Line
+	3950 8650 4050 8550
+Wire Wire Line
+	4050 7700 4550 7700
+Entry Wire Line
+	3950 7800 4050 7700
+Wire Bus Line
+	3950 10900 5650 10900
+Connection ~ 5650 10900
+Connection ~ 6250 10250
+Connection ~ 6250 9400
+Connection ~ 6250 8550
+Connection ~ 6250 7700
+Text Label 5800 10250 0    50   ~ 0
+FD0ID7
+Text Label 5800 9400 0    50   ~ 0
+FD0ID6
+Text Label 5800 8550 0    50   ~ 0
+FD0ID5
+Text Label 5800 7700 0    50   ~ 0
+FD0ID4
+Wire Wire Line
+	5750 10250 6250 10250
+Entry Wire Line
+	5650 10350 5750 10250
+Wire Wire Line
+	5750 9400 6250 9400
+Entry Wire Line
+	5650 9500 5750 9400
+Wire Wire Line
+	5750 8550 6250 8550
+Entry Wire Line
+	5650 8650 5750 8550
+Wire Wire Line
+	5750 7700 6250 7700
+Entry Wire Line
+	5650 7800 5750 7700
+Wire Bus Line
+	5650 10900 7400 10900
+Connection ~ 7400 10900
+Connection ~ 8000 10250
+Connection ~ 8000 9400
+Connection ~ 8000 8550
+Connection ~ 8000 7700
+Entry Wire Line
+	7400 7800 7500 7700
+Wire Wire Line
+	7500 7700 8000 7700
+Entry Wire Line
+	7400 8650 7500 8550
+Wire Wire Line
+	7500 8550 8000 8550
+Entry Wire Line
+	7400 9500 7500 9400
+Wire Wire Line
+	7500 9400 8000 9400
+Entry Wire Line
+	7400 10350 7500 10250
+Wire Wire Line
+	7500 10250 8000 10250
+Text Label 7550 7700 0    50   ~ 0
+FD1ID0
+Text Label 7550 8550 0    50   ~ 0
+FD1ID1
+Text Label 7550 9400 0    50   ~ 0
+FD1ID2
+Text Label 7550 10250 0    50   ~ 0
+FD1ID3
+Wire Bus Line
+	7400 10900 9100 10900
+Text Label 9250 10250 0    50   ~ 0
+FD1ID7
+Text Label 9250 9400 0    50   ~ 0
+FD1ID6
+Text Label 9250 8550 0    50   ~ 0
+FD1ID5
+Text Label 9250 7700 0    50   ~ 0
+FD1ID4
+Connection ~ 9700 10250
+Wire Wire Line
+	9200 10250 9700 10250
+Entry Wire Line
+	9100 10350 9200 10250
+Connection ~ 9700 9400
+Wire Wire Line
+	9200 9400 9700 9400
+Entry Wire Line
+	9100 9500 9200 9400
+Connection ~ 9700 8550
+Wire Wire Line
+	9200 8550 9700 8550
+Entry Wire Line
+	9100 8650 9200 8550
+Connection ~ 9700 7700
+Wire Wire Line
+	9200 7700 9700 7700
+Entry Wire Line
+	9100 7800 9200 7700
 Wire Bus Line
 	1150 6500 1150 8750
+Wire Bus Line
+	1150 6500 3150 6500
+Wire Bus Line
+	7400 7750 7400 10900
 Wire Bus Line
 	3950 7750 3950 10900
 Wire Bus Line
 	5650 7750 5650 10900
 Wire Bus Line
-	7400 7750 7400 10900
-Wire Bus Line
 	9100 7750 9100 10900
-Wire Bus Line
-	1150 6500 3150 6500
 Wire Bus Line
 	3600 7900 3600 10900
 Wire Bus Line
@@ -3034,7 +3037,4 @@ Wire Bus Line
 	5600 1050 5600 6400
 Wire Bus Line
 	5350 2300 5350 6400
-Connection ~ 2350 7500
-Wire Wire Line
-	2350 7500 2350 7650
 $EndSCHEMATC
