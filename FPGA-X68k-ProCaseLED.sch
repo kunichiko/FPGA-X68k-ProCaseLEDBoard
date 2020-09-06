@@ -469,50 +469,40 @@ Wire Wire Line
 	6450 6000 5700 6000
 Wire Wire Line
 	5700 6100 6450 6100
-Text Label 4650 2250 0    50   ~ 0
-POWER_LED_R
 Text Label 4650 2350 0    50   ~ 0
 POWER_LED_G
 Text Label 4650 2450 0    50   ~ 0
-POWER_LED_B
+POWER_LED_R
 Text Label 4650 2550 0    50   ~ 0
 LED_RESERVE
 Text Label 4650 2650 0    50   ~ 0
-HD_BUSY_LED_R
+HD_BUSY_LED_B
 Text Label 4650 2750 0    50   ~ 0
 HD_BUSY_LED_G
 Text Label 4650 2850 0    50   ~ 0
-HD_BUSY_LED_B
+HD_BUSY_LED_R
 Text Label 4650 2950 0    50   ~ 0
 TIMER_LED_R
 Text Label 4650 3050 0    50   ~ 0
-FDD0_ACCESS_R
+FDD0_ACCESS_B
 Text Label 4650 3150 0    50   ~ 0
 FDD0_ACCESS_G
 Text Label 4650 3250 0    50   ~ 0
-FDD0_ACCESS_B
+FDD0_ACCESS_R
 Text Label 4650 3350 0    50   ~ 0
 FDD0_EJECT_G
 Text Label 4650 3450 0    50   ~ 0
-FDD1_ACCESS_R
+FDD1_ACCESS_B
 Text Label 4650 3550 0    50   ~ 0
 FDD1_ACCESS_G
 Text Label 4650 3650 0    50   ~ 0
-FDD1_ACCESS_B
+FDD1_ACCESS_R
 Text Label 4650 3750 0    50   ~ 0
 FDD1_EJECT_G
-Text Label 5750 1100 0    50   ~ 0
-POWER_LED_R
 Text Label 5750 1200 0    50   ~ 0
 POWER_LED_G
-Text Label 5750 1300 0    50   ~ 0
-POWER_LED_B
-Text Label 5750 1900 0    50   ~ 0
-HD_BUSY_LED_R
 Text Label 5750 2000 0    50   ~ 0
 HD_BUSY_LED_G
-Text Label 5750 2100 0    50   ~ 0
-HD_BUSY_LED_B
 Text Label 5750 2700 0    50   ~ 0
 TIMER_LED_R
 Text Label 5750 3500 0    50   ~ 0
@@ -3037,4 +3027,14 @@ Wire Bus Line
 	5600 1050 5600 6400
 Wire Bus Line
 	5350 2300 5350 6400
+Text Label 5750 2100 0    50   ~ 0
+HD_BUSY_LED_B
+Text Label 5750 1900 0    50   ~ 0
+HD_BUSY_LED_R
+Text Label 5750 1300 0    50   ~ 0
+POWER_LED_B
+Text Label 5750 1100 0    50   ~ 0
+POWER_LED_R
+Text Label 4650 2250 0    50   ~ 0
+POWER_LED_B
 $EndSCHEMATC
